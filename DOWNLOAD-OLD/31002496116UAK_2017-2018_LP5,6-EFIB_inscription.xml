@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>31002496116UAK</matricule>
+  <nom>NOUNAGNON</nom>
+  <prenom>Zinsou José Franco</prenom>
+  <telephone>97837032</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EFIB</etablissement>
+  <anneeEtude>LP5,6-EFIB</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>DEREC</statut>
+  <montant>221000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-22</datePaiement>
+  <reftransaction>009UPCA180530004</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

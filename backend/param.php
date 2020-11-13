@@ -1,0 +1,9 @@
+<?php
+$an_precedent2="2017-2018";
+$an_precedent="2018-2019";
+$anneeEtude="2019-2020";
+$db_name="uak";
+$session_bac="2019";
+$debutinscription="05/10/2019";
+$fininscription="31/06/2020";
+?>

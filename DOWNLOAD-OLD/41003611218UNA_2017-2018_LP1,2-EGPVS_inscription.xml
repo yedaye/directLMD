@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41003611218UNA</matricule>
+  <nom>KAKPO ZANNOU</nom>
+  <prenom>Elvire Vidéhou Wilfrida Yabo</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP1,2-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-23</datePaiement>
+  <reftransaction>009UPCA181130101</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

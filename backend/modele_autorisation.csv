@@ -1,0 +1,4 @@
+nom;prenoms;date_naissance;lieu_naissance;nationalite;annee_auto;observ_auto;num_bac;session_bac;matricule;filiere;mode;FF;FI;type_auto;memo1;memo2;valide
+EDAYE;Yannick;12/02/2013;Cotonou;BJ;2013-2014;bachelier;67-A10-280;2013;;L1,2-EHAEV;BRS;;;1;;;OUI
+DANSOU;éric;20/04/2013;Calavi;BJ;2013-2014;Scolarite;;;11000061114UAK;L1,2-EHAEV;TP;10000;0;2;;;OUI
+DOSSOU;Marc;12/10/2013;Abomey;BJ;2013-2014;Scolarite;;;11000041114UAK;L1,2-EHAEV;TP;10000;0;2;;;OUI

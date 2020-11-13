@@ -1,0 +1,11 @@
+/* CSS Document */
+.aside {
+	padding:100px 50px 100px 50px;
+	position:absolute;
+	left:40%;
+	-webkit-transform:rotate(-90deg); 
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	writing-mode:lr-tb;
+	color:#F00;
+}

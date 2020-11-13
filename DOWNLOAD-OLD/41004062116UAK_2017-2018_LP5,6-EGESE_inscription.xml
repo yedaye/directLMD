@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>41004062116UAK</matricule>
+  <nom>BAMITEFA</nom>
+  <prenom>Okpeloua Joseph</prenom>
+  <telephone>60445711</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP5,6-EGESE</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>407000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-01-31</datePaiement>
+  <reftransaction>027UPCA180310101</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

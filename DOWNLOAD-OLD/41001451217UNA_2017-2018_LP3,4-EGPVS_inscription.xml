@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001451217UNA</matricule>
+  <nom>HOUNKANRIN</nom>
+  <prenom>Adjimon Dieudonnée</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP3,4-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>414000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-22</datePaiement>
+  <reftransaction>009UPCA180530005</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

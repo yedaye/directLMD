@@ -1,0 +1,15 @@
+/* CSS Document */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image:url(../img/fond-site.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+
+.titre_form{
+ color:#900;
+ font-size:15px;	
+}

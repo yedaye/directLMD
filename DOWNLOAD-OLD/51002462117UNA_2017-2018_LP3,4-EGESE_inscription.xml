@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>51002462117UNA</matricule>
+  <nom>ADJAHO</nom>
+  <prenom>Bignon Sophrone Ferwel</prenom>
+  <telephone>95153788</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP3,4-EGESE</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>EXOTP</statut>
+  <montant>78000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-12</datePaiement>
+  <reftransaction>023UPCA180430004</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

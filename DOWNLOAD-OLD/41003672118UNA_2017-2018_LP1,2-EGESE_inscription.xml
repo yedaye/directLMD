@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41003672118UNA</matricule>
+  <nom>HOUNTON</nom>
+  <prenom>Jésugnon Hermann Pater</prenom>
+  <telephone>95003364</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP3,4-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-06-23</datePaiement>
+  <reftransaction>009UPCA180500008</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

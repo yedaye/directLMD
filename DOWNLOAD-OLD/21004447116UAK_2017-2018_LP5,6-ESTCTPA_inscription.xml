@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21004447116UAK</matricule>
+  <nom>OGA</nom>
+  <prenom>Olorounlodjou Samuel</prenom>
+  <telephone>61337036</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP5,6-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>100000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-28</datePaiement>
+  <reftransaction>009UPCA180870007</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

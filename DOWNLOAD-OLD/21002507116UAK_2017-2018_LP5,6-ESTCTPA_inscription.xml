@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21002507116UAK</matricule>
+  <nom>HOUNYEME</nom>
+  <prenom>Elodie Majolène</prenom>
+  <telephone>62787586</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP5,6-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>100000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-19</datePaiement>
+  <reftransaction>009UPCA180780101</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

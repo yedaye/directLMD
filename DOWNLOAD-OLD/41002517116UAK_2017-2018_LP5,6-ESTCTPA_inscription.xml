@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41002517116UAK</matricule>
+  <nom>BOGNON</nom>
+  <prenom>Akuèmaho Isaac</prenom>
+  <telephone>66376592</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP5,6-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-27</datePaiement>
+  <reftransaction>009UPCA180580008</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

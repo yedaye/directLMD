@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>11002361216UAK</matricule>
+  <nom>FAGNIBO</nom>
+  <prenom>Adélaïde Hinhami</prenom>
+  <telephone>97661028</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP5,6-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>BRS</statut>
+  <montant>7000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-01-31</datePaiement>
+  <reftransaction>027UPCA180310202</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

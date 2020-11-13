@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>41004458216UAK</matricule>
+  <nom>AGBOTON</nom>
+  <prenom>Modeste Ruben</prenom>
+  <telephone>62612391</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EAQUA</etablissement>
+  <anneeEtude>LP5,6-EAQUA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-01-30</datePaiement>
+  <reftransaction>027UPCA180300001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

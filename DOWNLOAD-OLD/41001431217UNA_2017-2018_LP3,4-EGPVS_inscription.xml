@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001431217UNA</matricule>
+  <nom>AKPO</nom>
+  <prenom>Lékowou Monique Georgina</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP3,4-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>407000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-17</datePaiement>
+  <reftransaction>009UPCA181070001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

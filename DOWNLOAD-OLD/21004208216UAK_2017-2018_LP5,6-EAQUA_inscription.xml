@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>21004208216UAK</matricule>
+  <nom>KANDJI</nom>
+  <prenom>Vincent Paul</prenom>
+  <telephone>65859101</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EAQUA</etablissement>
+  <anneeEtude>LP5,6-EAQUA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>114000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-07</datePaiement>
+  <reftransaction>021UPCA180380001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

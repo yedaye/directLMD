@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001984118UNA</matricule>
+  <nom>TIKADA</nom>
+  <prenom>Dayanne</prenom>
+  <telephone>60476539</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EAPA</etablissement>
+  <anneeEtude>LP1,2-EAPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-09</datePaiement>
+  <reftransaction>009UPCA180680401</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

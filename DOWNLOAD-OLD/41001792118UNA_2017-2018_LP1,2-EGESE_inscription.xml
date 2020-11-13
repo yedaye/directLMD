@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001792118UNA</matricule>
+  <nom>MONTCHO</nom>
+  <prenom>Noë Fructueux</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP1,2-EGESE</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-15</datePaiement>
+  <reftransaction>024UPCA180740002</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

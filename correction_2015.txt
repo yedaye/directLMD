@@ -1,0 +1,76 @@
+﻿* TABLE INUTILE A SUPPRIMER
+
+bac2012
+etudiant
+odb_internet
+odb_internet_orig
+odb_photo
+
+*STATITIQUE COMPTABILITE
+
+/////////////////////////////Affichage des étudiants redoublants dans les statistiques comptable des boursiers
+
+??? connaitre le nombre des enjambés,
+/////////////////////////////Nombre de redoublants suivant le montant payé
+
+
+/////////////////////////////corrigé interface pays , modification zone
+
+/////////////////////////////////controler date_inscripiotn et date validation
+
+*RESULTAT BAC
+Corrigé interface CSV BAC
+
+Verifier pour seul les années 2014 sont visibles
+
+*ACCUEIL : 
+///////////////////////////////// total non affiché au niveau des inscriptions validé
+
+*FICHE DE PREINSCRIPTION
+Changer le texte : NB: la validation de votre inscription est obligatoire avant le (datefininscription), sans quoi votre inscription est null
+
+*VALIDATION
+//remplacer uak.bj par uakbenin.org
+
+/////mettre les emails en minuscule
+
+empecher le rechargement lors du changement de la photo
+
+modification des infos personnel doit se faire sans rechargement
+
+Apres validation , rechargement a empecher
+
+26-A38-1111 cas d'un étudiant bachelier dont l'inscription a été supprimé et qui doit se reinscrire avec son numéro de table du bac. corrigé le problème de reinscription. matricule 41003401215UAK
+
+/////////////////////////////////////41001821215UAK etudiant sans validation qui veut se reinscrire, empecher la reinscription 
+
+*COMPTABILITE
+cas des redoublant compter dans les boursiers (payement des frais inscriptions 15000)
+
+Ajouter un graphisme qui montre le nombre des redoublants donc ceux qui payent 15000
+
+Pour le choix d'un établissement détailler les frais par année d'étude
+
+*RESULTAT ECU POUR UN ETUDIANT
+
+Ajouter un champ observation pour notifier la note de service qui autorise le changement de la note
+
+
+*AUTORISATION
+
+champ texte1, texte2 et autorisation, vérifier la prise en compte lors de l'enregistrement
+
+
+*DROIT
+
+Scolarité école : Rien modifier ni supprimer,  avoir accès a la liste de leur école par année étude et pouvoir exporter
+
+pouvoir faire uniquement la préinscription, pas la validation
+
+
+*COmptabilite du rectorat : un compte permettant de voir l'espace comptabilité
+
+permettre l'exportation vers d'autres logiciel
+
+
+

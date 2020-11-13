@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21001312116UAK</matricule>
+  <nom>HOUNKANRIN</nom>
+  <prenom>Kponmahou Larousse</prenom>
+  <telephone>97818776</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP3,4-EGESE</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>100000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-13</datePaiement>
+  <reftransaction>017UPCA181030001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

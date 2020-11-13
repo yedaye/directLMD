@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21003092118UNA</matricule>
+  <nom>ADIMI</nom>
+  <prenom>Babatound? Marius</prenom>
+  <telephone>94459194</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP1,2-EGESE</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>100000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-12</datePaiement>
+  <reftransaction>009UPCA181020003</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

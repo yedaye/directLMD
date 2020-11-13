@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41002631216UAK</matricule>
+  <nom>DJABOUTOUBOUTOU</nom>
+  <prenom>Amzath</prenom>
+  <telephone>62878587</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP5,6-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-23</datePaiement>
+  <reftransaction>006UPCA180540005</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21002227116UAK</matricule>
+  <nom>GNONLONFIN</nom>
+  <prenom>Aziz</prenom>
+  <telephone>62837968</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP5,6-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>24200</montant>
+  <categorie>penalite</categorie>
+  <datePaiement>2018-04-05</datePaiement>
+  <reftransaction>009UPCA180950007</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

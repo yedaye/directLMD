@@ -1,0 +1,89 @@
+JQUID expport en CSV
+
+<?php 
+require_once '../../../tabs.php';
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>jqGrid PHP Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../themes/redmond/jquery-ui-1.8.2.custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../themes/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../themes/ui.multiselect.css" />
+    <style type="text">
+        html, body {
+        margin: 0;            /* Remove body margin/padding */
+        padding: 0;
+        overflow: hidden;    /* Remove scroll bars on browser window */
+        font-size: 75%;
+        }
+    </style>
+    <script src="../../../js/jquery.js" type="text/javascript"></script>
+    <script src="../../../js/i18n/grid.locale-en.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $.jgrid.no_legacy_api = true;
+    $.jgrid.useJSON = true;
+    </script>
+    <script src="../../../js/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script src="../../../js/jquery-ui-custom.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <div>
+          <?php include ("grid.php");?>
+      </div>
+      <br/>
+      <?php tabs(array("grid.php"));?>
+   </body>
+</html> 
+
+//////////////////////////
+
+grid.php.
+<?php
+require_once '../../../jq-config.php';
+// include the jqGrid Class
+require_once ABSPATH."php/jqGrid.php";
+// include the driver class
+require_once ABSPATH."php/jqGridPdo.php";
+// Connection to the server
+$conn = new PDO(DB_DSN,DB_USER,DB_PASSWORD);
+// Tell the db that we use utf-8
+$conn->query("SET NAMES utf8");
+
+// Create the jqGrid instance
+$grid = new jqGridRender($conn);
+// Write the SQL Query
+$grid->SelectCommand = 'SELECT OrderID, OrderDate, CustomerID, ShipName, Freight FROM orders';
+// Set output format to json
+$grid->dataType = 'json';
+// Let the grid create the model
+$grid->setColModel();
+// Set the url from where we obtain the data
+$grid->setUrl('grid.php');
+// Set some grid options
+$grid->setGridOptions(array(
+    "rowNum"=>10,
+    "rowList"=>array(10,20,30),
+    "sortname"=>"OrderID",
+    "caption"=>"Excel export"
+));
+// Change some property of the field(s)
+$grid->setColProperty("OrderDate", array(
+    "formatter"=>"date",
+    "formatoptions"=>array("srcformat"=>"Y-m-d H:i:s","newformat"=>"m/d/Y"),
+    "search"=>false
+    )
+);
+$grid->setColProperty("ShipName", array("label"=>"Shipper Name","width"=>"200"));
+$grid->setSelect('CustomerID', "SELECT CustomerID, CompanyName FROM customers");
+// Enable navigator
+$grid->navigator = true;
+// Enable excel export
+$grid->setNavOptions('navigator', array("excel"=>true,"add"=>false,"edit"=>false,"del"=>false,"view"=>false));
+// Set different filename
+$grid->exportfile = 'Report.xls';
+// Enjoy
+$grid->renderGrid('#grid','#pager',true, null, null, true,true);
+$conn = null;
+?> 

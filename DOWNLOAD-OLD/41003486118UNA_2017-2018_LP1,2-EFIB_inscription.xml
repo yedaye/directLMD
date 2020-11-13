@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41003486118UNA</matricule>
+  <nom>AYENA</nom>
+  <prenom>S?nounangb? Brun</prenom>
+  <telephone>97794344</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EFIB</etablissement>
+  <anneeEtude>LP1,2-EFIB</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-27</datePaiement>
+  <reftransaction>017UPCA181170001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

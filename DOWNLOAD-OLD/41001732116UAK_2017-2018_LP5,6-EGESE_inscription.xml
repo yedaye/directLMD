@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>41001732116UAK</matricule>
+  <nom>GANDONOU</nom>
+  <prenom>Betsaléél</prenom>
+  <telephone>62715634</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGESE</etablissement>
+  <anneeEtude>LP5,6-EGESE</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>407000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-01-29</datePaiement>
+  <reftransaction>006UPCA180290006</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

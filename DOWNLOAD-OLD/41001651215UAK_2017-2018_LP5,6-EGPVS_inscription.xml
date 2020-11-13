@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001651215UAK</matricule>
+  <nom>AREDOKOUN</nom>
+  <prenom>Valentin</prenom>
+  <telephone>66897355</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP5,6-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>43000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-09</datePaiement>
+  <reftransaction>009UPCA180680001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

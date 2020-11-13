@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41003301116UAK</matricule>
+  <nom>AHOUANSOU</nom>
+  <prenom>Ruphin Sylvain Abakar</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EHAEV</etablissement>
+  <anneeEtude>LP3,4-EHAEV</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>407000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-20</datePaiement>
+  <reftransaction>009UPCA180790301</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

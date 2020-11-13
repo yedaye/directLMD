@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001591118UNA</matricule>
+  <nom>DAHOUI</nom>
+  <prenom>Olivia Nadège</prenom>
+  <telephone>96030019</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EHAEV</etablissement>
+  <anneeEtude>LP1,2-EHAEV</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-27</datePaiement>
+  <reftransaction>009UPCA180500010</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

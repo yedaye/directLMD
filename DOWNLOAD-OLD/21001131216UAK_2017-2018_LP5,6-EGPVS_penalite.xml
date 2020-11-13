@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21001131216UAK</matricule>
+  <nom>AGBANOU</nom>
+  <prenom>Isaac</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP5,6-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>21400</montant>
+  <categorie>penalite</categorie>
+  <datePaiement>2018-03-14</datePaiement>
+  <reftransaction>009UPCA180730107</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

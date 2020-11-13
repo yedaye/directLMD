@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41003248218UNA</matricule>
+  <nom>GOUDOUGBENON</nom>
+  <prenom>Enagnon Blaise</prenom>
+  <telephone>94245861</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EAQUA</etablissement>
+  <anneeEtude>LP1,2-EAQUA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-23</datePaiement>
+  <reftransaction>011UPCA181130003</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

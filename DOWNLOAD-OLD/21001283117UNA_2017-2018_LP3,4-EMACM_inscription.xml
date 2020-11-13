@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21001283117UNA</matricule>
+  <nom>LOGOSSOU</nom>
+  <prenom>Yao Stéphane</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EMACM</etablissement>
+  <anneeEtude>LP3,4-EMACM</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>114000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-16</datePaiement>
+  <reftransaction>009UPCA181060108</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

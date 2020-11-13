@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41002807118UNA</matricule>
+  <nom>YETCHENOU</nom>
+  <prenom>Mahussi Rachel</prenom>
+  <telephone>66306675</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP1,2-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-06</datePaiement>
+  <reftransaction>011UPCA180960002</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

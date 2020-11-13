@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21001807118UNA</matricule>
+  <nom>DJIDONOU</nom>
+  <prenom>Agossou Marcellin</prenom>
+  <telephone>67438799</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP1,2-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>100000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-30</datePaiement>
+  <reftransaction>009UPCA181200005</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

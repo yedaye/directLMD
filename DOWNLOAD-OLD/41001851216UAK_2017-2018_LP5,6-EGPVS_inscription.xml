@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41001851216UAK</matricule>
+  <nom>ADJIBODOU</nom>
+  <prenom>Ochojuwa. Adélaïde Immaculée</prenom>
+  <telephone>61770599</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EGPVS</etablissement>
+  <anneeEtude>LP5,6-EGPVS</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>407000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-27</datePaiement>
+  <reftransaction>009UPCA180580004</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

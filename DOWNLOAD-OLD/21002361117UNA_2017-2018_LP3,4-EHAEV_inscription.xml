@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>21002361117UNA</matricule>
+  <nom>HOUESSOU</nom>
+  <prenom>Abed Nego Maurice Jesukpego</prenom>
+  <telephone>66970302</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EHAEV</etablissement>
+  <anneeEtude>LP3,4-EHAEV</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>TP</statut>
+  <montant>121000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-04-04</datePaiement>
+  <reftransaction>009UPCA180940001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

@@ -1,0 +1,48 @@
+code_ecu;designation;credit;code_ue
+ECUE1;Plantes aquatiques, physiologie végétales et  Animale;3;UE1
+ECUE2;Génétique appliquée;2;UE1
+ECUE3;Education civique, morale et Sport;3;UE2
+ECUE4;Anglais et langues locales (Fon /Yoruba / Dendi);3;UE2
+ECUE5;Agro-climatologie et système d’information géographique (SIG);2;UE3
+ECUE6;Physique et chimie du sol;2;UE3
+ECUE8;Chimie appliquée et biochimie;2;UE4
+ECUE9;Biomathématiques;2;UE4
+ECUE10;Stage d'Immersion en Milieu Professionnel Agricole;5;UE5
+ECUE11;Informatique;2;UE6
+ECUE12;Techniques de rédaction scientifique;2;UE6
+ECUE13;Introduction et base biologique de l’aquaculture;2;UE7
+ECUE14;Conception et plan de réalisation d’un aquarium;2;UE7
+ECUE15;Choix du site aquacole, conception et plan de réalisation des infrastructures aquacoles;2;UE7
+ECUE16;Techniques de construction de système de grossissement;2;UE8
+ECUE17;Techniques de construction d’une écloserie;2;UE8
+ECUE18;Techniques  de construction d’un aquarium et fonctionnement;2;UE8
+ECUE19;Limnologie physico-chimique en aquaculture;2;UE9
+ECUE20;Fertilisation et traitement de l’eau en aquaculture;2;UE9
+ECUE21;Paramètres physico-chimiques de l’eau et matériels;2;UE9
+ECUE22;Phytotechnie générale et systèmes de production;3;UE10
+ECUE23;Zootechnie générale;3;UE10
+ECUE24;Stage en milieu professionnel (SAMR), Sortie pédagogique et séminaire;6;UE11
+ECUE25;Maîtrise et gestion des rejets aquacoles;3;UE12
+ECUE26;Réglementation de la pêche et de l'aquaculture;3;UE12
+ECUE27;Choix du site aquacole, conception et plan de réalisation des infrastructures aquacoles;3;UE13
+ECUE28;Conception, techniques  de construction et Fonctionnement d’un aquarium;3;UE13
+ECUE29;Stage en milieu professionnel (SPE),  sortie pédagogique et séminaire;3;UE14
+ECUE30;Education civique et morale et sport;1;UE14
+ECUE31;Langue (anglais et langue locale);2;UE14
+ECUE32;Fertilisation et traitement de l’eau en aquaculture;2;UE15
+ECUE33;Limnologie physico-chimique en aquaculture;2;UE15
+ECUE34;Paramètres physico-chimiques de l’eau et matériels aquacoles;2;UE15
+ECUE35;Techniques de construction d’une écloserie;3;UE16
+ECUE36;Techniques de construction des infrastructures de système de grossissement;3;UE16
+ECUE37;Mise en place des géniteurs, techniques de reproduction et Larviculture des poissons d’élevage;2;UE17
+ECUE38;Mise en place des géniteurs, techniques de reproduction et Larviculture de crevettes et d’huîtres;2;UE17
+ECUE39;Systématique des poissons d’élevage;2;UE17
+ECUE40;Inventaire et caractéristiques des matières premières (végétale, animale et agro-industrielle);3;UE18
+ECUE41;Formulation,  Fabrication, conservation et stockage d’aliment sec;3;UE18
+ECUE42;Technique de mise en charge et d’élevage de crevettes, d’huîtres et de poissons marchands;3;UE19
+ECUE43;Technique d’alimentation et de suivi des paramètres d’élevage de crevettes, d’huîtres et de poissons marchands;3;UE19
+ECUE44;Multiplication et suivi de la qualité nutritionnelle des macro-invertébrés;2;UE20
+ECUE45;Mise en place des substrats de culture des macro-invertébrés;2;UE20
+ECUE46;Réalisation des milieux de culture, production et utilisation des algues microscopiques;2;UE21
+ECUE47;Réalisation des milieux de culture, production et utilisation de zooplancton microscopiques;2;UE21
+ECUE48;Etude de cas (tutoré) –stage (SPP), méthode recherche et dispositif expérimental;4;UE22

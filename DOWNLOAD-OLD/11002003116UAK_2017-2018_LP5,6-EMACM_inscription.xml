@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>11002003116UAK</matricule>
+  <nom>LOKO</nom>
+  <prenom>Sèmagni Daniel</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EMACM</etablissement>
+  <anneeEtude>LP5,6-EMACM</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>BRS</statut>
+  <montant>14000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-02-19</datePaiement>
+  <reftransaction>009UPCA180500003</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

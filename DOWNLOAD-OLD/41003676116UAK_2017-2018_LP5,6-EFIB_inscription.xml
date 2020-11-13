@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--inscription-->
+<etudiant>
+  <matricule>41003676116UAK</matricule>
+  <nom>AHOLOUKPE</nom>
+  <prenom>Mahona Janvier</prenom>
+  <telephone>67015040</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EFIB</etablissement>
+  <anneeEtude>LP5,6-EFIB</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-01-29</datePaiement>
+  <reftransaction>022UPCA180290001</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

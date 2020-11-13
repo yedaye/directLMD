@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>31003057116UAK</matricule>
+  <nom>DAGUE</nom>
+  <prenom>Ursule</prenom>
+  <telephone>00000000</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>ESTCTPA</etablissement>
+  <anneeEtude>LP5,6-ESTCTPA</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>DEREC</statut>
+  <montant>235000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-03-01</datePaiement>
+  <reftransaction>009UPCA180600009</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>

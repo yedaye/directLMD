@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Notification de paiement inscription -->
+<etudiant>
+  <matricule>41003171116UAK</matricule>
+  <nom>KPANOU</nom>
+  <prenom>Kpessou Louis Prince</prenom>
+  <telephone>61516581</telephone>
+  <anneeacademique>2017-2018</anneeacademique>
+  <etablissement>EHAEV</etablissement>
+  <anneeEtude>LP5,6-EHAEV</anneeEtude>
+  <nationalite>BJ</nationalite>
+  <statut>SPR</statut>
+  <montant>400000</montant>
+  <categorie>inscription</categorie>
+  <datePaiement>2018-05-02</datePaiement>
+  <reftransaction>009UPCA181220201</reftransaction>
+  <intermediairePaiement>ECOBANK</intermediairePaiement>
+</etudiant>
