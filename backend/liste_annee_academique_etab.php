@@ -308,16 +308,9 @@ if(isset($_POST['valide']) && $_POST['valide']=="non"){ echo "selected"; }
 $color="#FA11FA";
 foreach($row_inscritss as $row_inscrits) { 
 	if(in_array("uak",$_SESSION['etablissement'])){
-		//correction date de naissance
-			if(strpos($row_inscrits['date_naissance'],"/") > 0){
-				$date=str_replace("/","-",$row_inscrits['date_naissance']);
-			}else{
-				//$date=$row['date_naissance'];
-				$dates=explode("-",$row_inscrits['date_naissance']);
-				$date=$dates[2]."-".$dates[1]."-".$dates[0];
-			}
-		
+
 	
+
 	$a=0;
 	//$liste=selTableDataLimit("student","matricule",$row_inscrits['matricule']);
 	if($color=="#FA11FA"){
@@ -335,7 +328,7 @@ foreach($row_inscritss as $row_inscrits) {
 		<td><?php  echo $row_inscrits['nom']; ?></td>
 		<td><?php echo $row_inscrits['prenoms']; ?></td>
 		<td <?php if($row_inscrits['telephone']==0) echo "bgcolor='#CCCCCC'"; ?>><?php echo $row_inscrits['telephone']; ?></td>
-		<td><?php echo $date ?></td>
+		<td><?php echo datecorrect($row_inscrits['date_naissance']) ?></td>
 		<td><?php echo $row_inscrits['lieu_naissance'];  ?></td>
 		<td><?php echo $row_inscrits['Nationalite'];  ?></td>
 		<td><?php echo $row_inscrits['ecole']; ?></td>

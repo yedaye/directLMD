@@ -652,4 +652,16 @@ function num_autorisation($annee_etude,$type_auto,$pdo){
 	return $num_auto;
 }
 
+
+function datecorrect($dateold){
+   //correction date de naissance
+   if(strpos($dateold,"/") > 0){
+      $date=str_replace("/","-",$dateold);
+   }else{
+      //$date=$row['date_naissance'];
+      $dates=explode("-",$dateold);
+      $date=$dates[2]."-".$dates[1]."-".$dates[0];
+   }
+   return $date;
+}
 ?>
