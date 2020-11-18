@@ -110,6 +110,9 @@ $msg_dja="";
 					<option value='P5' <?php if(isset($_GET['promotion']) && $_GET['promotion']=='P5'){ echo "selected=\"selected\""; } ?>>Promo5</option>
 					<option value='P6' <?php if(isset($_GET['promotion']) && $_GET['promotion']=='P6'){ echo "selected=\"selected\""; } ?>>Promo6</option>
 					<option value='P7' <?php if(isset($_GET['promotion']) && $_GET['promotion']=='P7'){ echo "selected=\"selected\""; } ?>>Promo7</option>
+					<option value='P5' <?php if(isset($_GET['promotion']) && $_GET['promotion']=='P8'){ echo "selected=\"selected\""; } ?>>Promo8</option>
+					<option value='P6' <?php if(isset($_GET['promotion']) && $_GET['promotion']=='P9'){ echo "selected=\"selected\""; } ?>>Promo9</option>
+					<option value='P7' <?php if(isset($_GET['promotion']) && $_GET['promotion']=='P10'){ echo "selected=\"selected\""; } ?>>Promo10</option>
                 </select>
           <input type="submit" name="button" id="button" value="Rechercher" /><input type='hidden' name='curiculla'/></td>
         </tr>

@@ -328,7 +328,7 @@ foreach($row_inscritss as $row_inscrits) {
 		<td><?php  echo $row_inscrits['nom']; ?></td>
 		<td><?php echo $row_inscrits['prenoms']; ?></td>
 		<td <?php if($row_inscrits['telephone']==0) echo "bgcolor='#CCCCCC'"; ?>><?php echo $row_inscrits['telephone']; ?></td>
-		<td><?php echo datecorrect($row_inscrits['date_naissance']) ?></td>
+		<td><?php echo datecorrect($row_inscrits['date_naissance']); ?></td>
 		<td><?php echo $row_inscrits['lieu_naissance'];  ?></td>
 		<td><?php echo $row_inscrits['Nationalite'];  ?></td>
 		<td><?php echo $row_inscrits['ecole']; ?></td>
