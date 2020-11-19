@@ -187,10 +187,10 @@ if(count($inscription)>0){
         </tr>
          <tr>
           <td bgcolor="#CCFFCC" class="texte"><strong class="texte_grand">Email UNA :</strong></td>
-          <td width="22%" align="center" valign="middle" bgcolor="#CCFFCC" style="font-size:14px; color:#F00"><b>
+          <td width="75%" align="center" valign="middle" bgcolor="#CCFFCC" style="font-size:14px; color:#F00"><b>
             <input name="email" type="text" id="email" value="<?php echo utf8_encode(strtolower($etudiant['email_uak'])); ?>" size="10"/>
 @unabenin.bj</b></td>
-          <td width="51%" bgcolor="#CCFFCC" style="font-size:14px; color:#F00"><b><b><b><img src="../img/email.png" width="48" height="48" onclick="ajout_email('<?php echo strtolower(substr($etudiant['nom'],0,2).substr($etudiant['prenoms'],0,2).substr($etudiant['lieu_naissance'],0,2)); ?>')" /></b></b></b></td>
+          <td width="25%" bgcolor="#CCFFCC" style="font-size:14px; color:#F00"><b><b><b><img src="../img/email.png" title="appuyer ici pour mettre à jour l'email" width="48" height="48" onclick="ajout_email('<?php echo strtolower(substr($etudiant['nom'],0,2).substr($etudiant['prenoms'],0,2).substr($etudiant['lieu_naissance'],0,2)); ?>')" /></b></b></b></td>
          </tr>
         <tr>
           <td bgcolor="#CCFFCC" class="texte">&nbsp;</td>
