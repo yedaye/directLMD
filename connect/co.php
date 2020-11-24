@@ -1,7 +1,7 @@
 <?php
 	$dsn = "mysql:host=localhost;dbname=inscription";
-	$user = "admin";
-	$passwd = "unauak";
+	$user = "root";
+	$passwd = "root";
 
 	$pdo = new PDO($dsn, $user, $passwd);
 
