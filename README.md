@@ -14,6 +14,10 @@ Functionnalities are :
 ## Installation
 
 - Download the repository
+- create database called 'inscription'
+```bash
+CREATE DATABASE inscription;
+```
 - load the sql file inside doc folder
 - to make it works you have to insert the basic element as ( school name, field and level, and add student autorisation) 
 
