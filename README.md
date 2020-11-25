@@ -11,6 +11,11 @@ Functionnalities are :
 - Accountant interface
 - public interface for student to display their result or print enrolment prouf
 
+
+More information in the presentation document 
+
+[Read the document](doc/Direct%20LMD%20presentation.pdf)
+
 ## Installation
 
 - Download the repository
