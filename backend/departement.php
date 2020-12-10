@@ -15,11 +15,11 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['code'])){
 	//controle de l'existance
-	$controle=selTableDataCount("departement","code_dept",$_POST['code']);
+	$controle=selTableDataCount("departement","code_dept",$_POST['code'],$pdo);
 	if($controle==0){
 		$champ=array('code_dept','lib_dept');
 		$valeur=array($_POST['code'],$_POST['libelle']);
-		insTable("departement",$champ,$valeur);
+		insTable("departement",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?dept&ajoutOK');
@@ -38,7 +38,7 @@ if(isset($_POST['code'])){
 if(isset($_POST['modif'])){
 	$champ=array('code_dept','lib_dept');
 	$valeur=array($_POST['code2'],$_POST['libelle2']);
-	updTable("departement",$champ,$valeur,"code_dept",$_POST['modif']);
+	updTable("departement",$champ,$valeur,"code_dept",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?dept&modifOK');
@@ -153,7 +153,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("departement","code_dept");
+$liste=selTableData("departement","code_dept",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -200,7 +200,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("departement","code_dept",$_GET['modif']);
+$modifcation=selTableDataWhere("departement","code_dept",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="ufr.php" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Ajout d'un nouveau département" style="width:550px;height:300px;padding:10px;"

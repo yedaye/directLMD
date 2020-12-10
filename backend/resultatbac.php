@@ -149,7 +149,9 @@ if(!isset($_GET['modif']) && !isset($_GET['ajout']) && !isset($_GET['ajoutlot'])
 ?>
 
 <div id="toolbar" align="right"><form action="accueil.php?bac" method="get"><input name="bac" type="hidden" value="" />Rechercher par la session : <select name="session" id="session">
-  				<option value="2018" <?php if(isset($_GET['session']) && $_GET['session']=='2018'){ echo "selected='selected'"; } ?>>2018</option>
+<option value="2020" <?php if(isset($_GET['session']) && $_GET['session']=='2020'){ echo "selected='selected'"; } ?>>2020</option>
+<option value="2019" <?php if(isset($_GET['session']) && $_GET['session']=='2019'){ echo "selected='selected'"; } ?>>2019</option>
+  <option value="2018" <?php if(isset($_GET['session']) && $_GET['session']=='2018'){ echo "selected='selected'"; } ?>>2018</option>
 				<option value="2017" <?php if(isset($_GET['session']) && $_GET['session']=='2017'){ echo "selected='selected'"; } ?>>2017</option>
 				<option value="2016" <?php if(isset($_GET['session']) && $_GET['session']=='2016'){ echo "selected='selected'"; } ?>>2016</option>
 				<option value="2015" <?php if(isset($_GET['session']) && $_GET['session']=='2015'){ echo "selected='selected'"; } ?>>2015</option>
@@ -183,17 +185,17 @@ if(!isset($_GET['modif']) && !isset($_GET['ajout']) && !isset($_GET['ajoutlot'])
 <tbody>
 <?php
 if((isset($_GET['session']) && $_GET['session']!="") && $_GET['nom']==''){
-	$liste=selTableMultiAnswer("resultatbac","session",$_GET['session']);
+	$liste=selTableMultiAnswer("resultatbac","session",$_GET['session'],$pdo);
 	$count=300;
 }else{
 	if((isset($_GET['session']) && $_GET['session']!="") && (isset($_GET['nom']) && $_GET['nom']!="")){
-		$liste=selTableData2Fields("resultatbac","session",$_GET['session'],'Nom',$_GET['nom']);
+		$liste=selTableData2Fields("resultatbac","session",$_GET['session'],'Nom',$_GET['nom'],$pdo);
 		//$liste=$liste[0];
 		//print_r($liste);
 		$count=count($liste);
 		//echo $count;
 	}else{
-		$liste=selTableMultiAnswer("resultatbac","session","2015");
+		$liste=selTableMultiAnswer("resultatbac","session","2015",$pdo);
 		//$count=300;
 		$count=300;
 	}
@@ -204,11 +206,11 @@ for($i=0; $i<$count;$i++){
   <tr valign="top">
     <td><?php echo $liste[$i]['NumTable']; ?></td>
     <td><?php echo $liste[$i]['session']; ?></td>
-    <td><?php echo utf8_encode($liste[$i]['Nom']); ?></td>
-    <td><?php echo utf8_encode($liste[$i]['Prenoms']); ?></td>
+    <td><?php echo $liste[$i]['Nom']; ?></td>
+    <td><?php echo $liste[$i]['Prenoms']; ?></td>
     <td><?php echo $liste[$i]['sexe']; ?></td>
 	<td><?php echo $liste[$i]['Date_Nais']; ?></td>
-	<td><?php echo utf8_encode($liste[$i]['Lieu_Nais']); ?></td>
+	<td><?php echo $liste[$i]['Lieu_Nais']; ?></td>
     <td><?php echo $liste[$i]['Serie']; ?></td>
     <td><?php echo $liste[$i]['Nationalite']; ?></td>
     <td><?php echo $liste[$i]['Moyenne']; ?></td>
@@ -339,7 +341,7 @@ if(isset($_GET['ajoutlot'])){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout']) && !isset($_GET['ajoutlot'])){ 
-$modification=selTableDataWhere("student","matricule",$_GET['modif']);
+$modification=selTableDataWhere("student","matricule",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="mapping.php" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Modification du verdict" style="width:700px;height:400px;padding:10px;"

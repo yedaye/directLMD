@@ -15,11 +15,11 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['code'])){
 	//controle de l'existance
-	$controle=selTableDataCount("mode","code",$_POST['code']);
+	$controle=selTableDataCount("mode","code",$_POST['code'],$pdo);
 	if($controle==0){
 		$champ=array('code','Intitule','actif');
 		$valeur=array($_POST['code'],$_POST['libelle'],$_POST['actif']);
-		insTable("mode",$champ,$valeur);
+		insTable("mode",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?statut&ajoutOK');
@@ -38,7 +38,7 @@ if(isset($_POST['code'])){
 if(isset($_POST['modif'])){
 	$champ=array('code','Intitule','actif');
 	$valeur=array($_POST['code2'],$_POST['libelle2'],$_POST['actif2']);
-	updTable("mode",$champ,$valeur,"code",$_POST['modif']);
+	updTable("mode",$champ,$valeur,"code",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?statut&modifOK');
@@ -154,7 +154,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("mode","code");
+$liste=selTableData("mode","code",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -206,7 +206,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("mode","code",$_GET['modif']);
+$modifcation=selTableDataWhere("mode","code",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="ufr.php" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Ajout d'un nouveau" style="width:550px;height:300px;padding:10px;"

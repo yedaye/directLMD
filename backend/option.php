@@ -15,11 +15,11 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['code'])){
 	//controle de l'existance
-	$controle=selTableDataCount("options","code",$_POST['code']);
+	$controle=selTableDataCount("options","code",$_POST['code'],$pdo);
 	if($controle==0){
 		$champ=array('code','libelle');
 		$valeur=array($_POST['code'],$_POST['libelle']);
-		insTable("options",$champ,$valeur);
+		insTable("options",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?option&ajoutOK');
@@ -38,7 +38,7 @@ if(isset($_POST['code'])){
 if(isset($_POST['modif'])){
 	$champ=array('code','libelle');
 	$valeur=array($_POST['code2'],$_POST['libelle2']);
-	updTable("options",$champ,$valeur,"code",$_POST['modif']);
+	updTable("options",$champ,$valeur,"code",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?option&modifOK');
@@ -153,7 +153,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("options","code");
+$liste=selTableData("options","code",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -200,7 +200,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("options","code",$_GET['modif']);
+$modifcation=selTableDataWhere("options","code",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="?option" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Modifier une option" style="width:550px;height:300px;padding:10px;"

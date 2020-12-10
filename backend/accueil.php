@@ -81,7 +81,7 @@ body {
                     <img src="../js/icons/ok.png" align="left" style="padding-right:15px"/> <a href="accueil.php?bac">Resultat BAC</a><br/><br/>
                     <img src="../js/icons/ok.png" align="left" style="padding-right:15px"/><a href="accueil.php?mapping"> Mapping</a><br/><br/>
 					<img src="../js/icons/ok.png" align="left" style="padding-right:15px"/><a href="accueil.php?parametre"> Parametre UE</a><br/><br/>
-					<img src="../js/icons/ok.png" align="left" style="padding-right:15px"/><a href="accueil.php?xmlgene"> Regeneration xml</a><br/><br/>
+					<!--img src="../js/icons/ok.png" align="left" style="padding-right:15px"/><a href="accueil.php?xmlgene"> Regeneration xml</a><br/><br/-->
                    
                 </div>
                 <div title="configuration" data-options="iconCls:'icon-cut'" style="padding:10px;">

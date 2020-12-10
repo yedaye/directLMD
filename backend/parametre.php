@@ -15,11 +15,11 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['code'])){
 	//controle de l'existance
-	$controle=selTableDataCount("param","anne_academique",$_POST['anne_academique']);
+	$controle=selTableDataCount("param","anne_academique",$_POST['anne_academique'],$pdo);
 	if($controle==0){
 		$champ=array('anne_academique','an_precedent','moyenne_ecu_mini','moyenne_ue_mini','pourcentage_ue_mini','session_bac','montant_ecu');
 		$valeur=array($_POST['anne_academique'],$_POST['an_precedent'],$_POST['moyenne_ecu_mini'],$_POST['moyenne_ue_mini'],$_POST['pourcentage_ue_mini'],$_POST['session_bac'],$_POST['montant_ecu']);
-		insTable("param",$champ,$valeur);
+		insTable("param",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?param&ajoutOK');
@@ -38,7 +38,7 @@ if(isset($_POST['code'])){
 if(isset($_POST['modif'])){
 		$champ=array('anne_academique','an_precedent','moyenne_ecu_mini','moyenne_ue_mini','pourcentage_ue_mini','session_bac','montant_ecu');
 		$valeur=array($_POST['anne_academique2'],$_POST['an_precedent2'],$_POST['moyenne_ecu_mini2'],$_POST['moyenne_ue_mini2'],$_POST['pourcentage_ue_mini2'],$_POST['session_bac2'],$_POST['montant_ecu2']);
-		updTable("param",$champ,$valeur,"id",$_POST['id']);
+		updTable("param",$champ,$valeur,"id",$_POST['id'],$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?param&modifOK');
@@ -158,7 +158,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("param","id");
+$liste=selTableDataDesc("param","id",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -231,7 +231,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("param","id",$_GET['modif']);
+$modifcation=selTableDataWhere("param","id",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="?param" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Modifier un parametre" style="width:550px;height:300px;padding:10px;"

@@ -15,7 +15,7 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['libelle'])){
 	//controle de l'existance
-	$controle=selTableDataCount("type","name",$_POST['libelle']);
+	$controle=selTableDataCount("type","name",$_POST['libelle'],$pdo);
 	if($controle==0){
 		$champ=array('name');
 		$valeur=array($_POST['libelle']);
@@ -38,7 +38,7 @@ if(isset($_POST['libelle'])){
 if(isset($_POST['modif'])){
 	$champ=array('name');
 	$valeur=array($_POST['libelle2']);
-	updTable("type",$champ,$valeur,"id",$_POST['modif']);
+	updTable("type",$champ,$valeur,"id",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?type&modifOK');
@@ -153,7 +153,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("type","name");
+$liste=selTableData("type","name",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -196,7 +196,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("type","id",$_GET['modif']);
+$modifcation=selTableDataWhere("type","id",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="ufr.php" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Ajout d'un nouveau type" style="width:550px;height:300px;padding:10px;"

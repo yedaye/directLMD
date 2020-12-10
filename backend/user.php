@@ -15,13 +15,13 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['nom'])){
 	//controle de l'existance
-	$controle=selTableDataCount("utilisateur","nom",$_POST['nom']);
+	$controle=selTableDataCount("utilisateur","nom",$_POST['nom'],$pdo);
 	if($controle==0){
 		//print_r($_POST);
 		$maliste=implode(";",$_POST['ecole']);
 		$champ=array('nom','prenoms','username','mot_de_passe','droit','etab');
 		$valeur=array($_POST['nom'],$_POST['prenoms'],$_POST['login'],MD5($_POST['mp']),$_POST['droit'],$maliste);
-		insTable("utilisateur",$champ,$valeur);
+		insTable("utilisateur",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?user&ajoutOK');
@@ -41,7 +41,7 @@ if(isset($_POST['modif'])){
 	$maliste=implode(";",$_POST['ecole2']);
 	$champ=array('nom','prenoms','username','mot_de_passe','droit','etab');
 	$valeur=array($_POST['nom2'],$_POST['prenoms2'],$_POST['login2'],MD5($_POST['mp2']),$_POST['droit2'],$maliste);	
-	updTable("utilisateur",$champ,$valeur,"id",$_POST['modif']);
+	updTable("utilisateur",$champ,$valeur,"id",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?user&modifOK');
@@ -159,7 +159,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("utilisateur","nom");
+$liste=selTableData("utilisateur","nom",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -241,7 +241,7 @@ for($i=0; $i<count($liste);$i++){
             <option value='aucun'>Aucun</option>
             <option value='uak'>UAK</option>
             <?php
-			$ufr=selTableMultiAnswer("ecole_ufr","actif","1");
+			$ufr=selTableMultiAnswer("ecole_ufr","actif","1",$pdo);
 			for($i=0;$i<count($ufr);$i++){
 				echo "<option value='".$ufr[$i]['code_ecole']."'>".strtolower($ufr[$i]['lib_ecole'])." (".$ufr[$i]['code_ecole'].")</option>";
 			}
@@ -263,7 +263,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("utilisateur","id",$_GET['modif']);
+$modifcation=selTableDataWhere("utilisateur","id",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="ufr.php" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Ajout d'un nouveau type" style="width:700px;height:450px;padding:10px;"
@@ -315,7 +315,7 @@ $modifcation=selTableDataWhere("utilisateur","id",$_GET['modif']);
             	<option value='aucun' <?php if(in_array('aucun',$liste)){ echo "selected";} ?>>Aucun</option>
             	<option value='uak' <?php if(in_array('uak',$liste)){ echo "selected";} ?>>UAK</option>
 				<?php
-                $ufr=selTableMultiAnswer("ecole_ufr","actif","1");
+                $ufr=selTableMultiAnswer("ecole_ufr","actif","1",$pdo);
                 for($i=0;$i<count($ufr);$i++){
                     echo "<option value='".$ufr[$i]['code_ecole']."' ";
 					if(in_array($ufr[$i]['code_ecole'],$liste)){ echo "selected";} 

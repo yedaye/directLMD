@@ -170,18 +170,18 @@ for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
     <td title=""><?php echo $liste[$i]['matricule']; ?></td>
-    <td><?php echo utf8_encode($liste[$i]['nom']); ?></td>
-    <td><?php echo utf8_encode($liste[$i]['prenoms']); ?></td>
+    <td><?php echo $liste[$i]['nom']; ?></td>
+    <td><?php echo $liste[$i]['prenoms']; ?></td>
     <td><?php echo $liste[$i]['sexe']; ?></td>
     <td><?php echo $liste[$i]['date_naissance']; ?></td>
-	<td><?php echo utf8_encode($liste[$i]['lieu_naissance']); ?></td>
+	<td><?php echo $liste[$i]['lieu_naissance']; ?></td>
 	<td><?php echo $liste[$i]['situ_fam']; ?></td>
     <td><?php echo $liste[$i]['nombre_enfant']; ?></td>
     <td><?php echo $liste[$i]['email']; ?></td>
     <td><?php echo $liste[$i]['telephone']; ?></td>
     <td><?php echo $liste[$i]['pays_naissance']; ?></td>
 	<td><?php echo $liste[$i]['Nationalite']; ?></td>
-    <td><?php echo utf8_decode($liste[$i]['adresse_postal']); ?></td>
+    <td><?php echo $liste[$i]['adresse_postal']; ?></td>
     <td><?php echo $liste[$i]['num_table']; ?></td>
     <td><?php echo $liste[$i]['session']; ?></td>
     <td><?php echo $liste[$i]['code_auto']; ?></td>

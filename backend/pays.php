@@ -15,11 +15,11 @@ $msg_dja="";
 ///action pour l'ajout d'une UFR
 if(isset($_POST['cod_pays'])){
 	//controle de l'existance
-	$controle=selTableDataCount("pays","cod_pays",$_POST['cod_pays']);
+	$controle=selTableDataCount("pays","cod_pays",$_POST['cod_pays'],$pdo);
 	if($controle==0){
 		$champ=array('cod_pays','cod_zone','lib_pays','lib_nation');
 		$valeur=array($_POST['cod_pays'],$_POST['cod_zone'],$_POST['lib_pays'],$_POST['lib_nation']);
-		insTable("pays",$champ,$valeur);
+		insTable("pays",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?pays&ajoutOK');
@@ -38,7 +38,7 @@ if(isset($_POST['cod_pays'])){
 if(isset($_POST['modif'])){
 	$champ=array('cod_pays','cod_zone','lib_pays','lib_nation');
 	$valeur=array($_POST['cod_pays2'],$_POST['cod_zone2'],$_POST['lib_pays2'],$_POST['lib_nation2']);
-	updTable("pays",$champ,$valeur,"cod_pays",$_POST['modif']);
+	updTable("pays",$champ,$valeur,"cod_pays",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?pays&modifOK');
@@ -139,11 +139,11 @@ if(isset($_GET['supOK'])){
 ///action pour l'ajout d'une UFR
 if(isset($_POST['cod_zone'])){
 	//controle de l'existance
-	$controle=selTableDataCount("pays","cod_zone",$_POST['cod_zone']);
+	$controle=selTableDataCount("pays","cod_zone",$_POST['cod_zone'],$pdo);
 	if($controle==0){
 		$champ=array('cod_pays','cod_zone','lib_pays','lib_nation');
 		$valeur=array($_POST['cod_pays'],$_POST['cod_zone'],$_POST['lib_pays'],$_POST['lib_nation']);
-		insTable("pays",$champ,$valeur);
+		insTable("pays",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?type&ajoutOK');
@@ -162,7 +162,7 @@ if(isset($_POST['cod_zone'])){
 if(isset($_POST['modif'])){
 	$champ=array('cod_pays','cod_zone','lib_pays','lib_nation');
 	$valeur=array($_POST['cod_pays2'],$_POST['cod_zone2'],$_POST['lib_pays2'],$_POST['lib_nation2']);
-	updTable("pays",$champ,$valeur,"id",$_POST['modif']);
+	updTable("pays",$champ,$valeur,"id",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?type&modifOK');
@@ -188,17 +188,17 @@ if(isset($_POST['modif'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("pays","cod_pays");
+$liste=selTableData("pays","cod_pays",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
     <td><?php echo $liste[$i]['cod_pays']; ?></td>
     <td <?php 
-	$zone=selTableDataWhere("zone","COD_ZONE",$liste[$i]['cod_zone']);
+	$zone=selTableDataWhere("zone","COD_ZONE",$liste[$i]['cod_zone'],$pdo);
 	echo "title=\"".$zone['LIB_ZONE']."\"";
 	echo $liste[$i]['cod_zone']; ?>><?php echo $liste[$i]['cod_zone']; ?></td>
-    <td><?php echo utf8_encode($liste[$i]['lib_pays']); ?></td>
-    <td><?php echo utf8_encode($liste[$i]['lib_nation']); ?></td>
+    <td><?php echo $liste[$i]['lib_pays']; ?></td>
+    <td><?php echo $liste[$i]['lib_nation']; ?></td>
     <td>  
 <a href="?pays&modif=<?php echo $liste[$i]['cod_pays']; ?>" class="easyui-linkbutton" iconCls="icon-edit" plain="true">Modifier  </a>
 <a onclick="suppression('<?php echo $liste[$i]['cod_pays']; ?>')" class="easyui-linkbutton" iconCls="icon-remove" plain="true">Supprimer </a>
@@ -222,7 +222,7 @@ for($i=0; $i<count($liste);$i++){
             <td>
             <select required="true" name="cod_zone" id="cod_zone">
             <?php
-			$ufr=selTableData("zone","COD_ZONE");
+			$ufr=selTableData("zone","COD_ZONE",$pdo);
 			for($i=0;$i<count($ufr);$i++){
 				echo "<option value='".$ufr[$i]['COD_ZONE']."'>".strtolower($ufr[$i]['LIB_ZONE'])."</option>";
 			}
@@ -256,7 +256,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modifcation=selTableDataWhere("pays","cod_pays",$_GET['modif']);
+$modifcation=selTableDataWhere("pays","cod_pays",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="?pays" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Modifier d'un pays" style="width:550px;height:300px;padding:10px;"
@@ -268,7 +268,7 @@ $modifcation=selTableDataWhere("pays","cod_pays",$_GET['modif']);
             <td>
             <select required="true" name="cod_zone2" id="cod_zone2">
             <?php
-			$ufr=selTableData("zone","COD_ZONE");
+			$ufr=selTableData("zone","COD_ZONE",$pdo);
 			for($i=0;$i<count($ufr);$i++){
 				$selected="";
 				if($modifcation['cod_zone']==$ufr[$i]['COD_ZONE']){ $selected="selected=\"selected\""; }

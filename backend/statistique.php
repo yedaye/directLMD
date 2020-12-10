@@ -1,3 +1,17 @@
+<style>
+	body{
+		background-color:#ccc;
+	}
+</style>
+<script src="../js/Chart.min.js"></script>
+<script src="../js/utils.js"></script>
+<style>
+canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+</style>
 <?php
 if(!isset($_SESSION['erreur'])){ 
 	$_SESSION['erreur']="" ;
@@ -13,37 +27,166 @@ $msg_modif="";
 $msg_dja="";
 
 ?>
+<!--  graphic en donut -->
+
+<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						87,
+						997
+					],
+					backgroundColor: [
+						window.chartColors.orange,
+						window.chartColors.blue
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Reste à valider',
+					'valider'
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'Inscription 2019-2020'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+
+		
+<!--  graphic en courbe -->
+
+		var MONTHS = ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'];
+		var config2 = {
+			type: 'line',
+			data: {
+				labels: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+				datasets: [{
+					label: 'Femme',
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [
+						35,
+						53,
+						69,
+						118,
+						127,
+						161,
+						166,
+						145,
+						154,
+						174,
+						216,
+						143
+					],
+					fill: false,
+				}, {
+					label: 'Homme',
+					fill: false,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [
+						159
+						,220
+						,326
+						,474
+						,523
+						,603
+						,686
+						,609
+						,631
+						,696
+						,867
+						,445
+					],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'evolution des inscriptions par genre par année'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Genre'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Nombre'
+						}
+					}]
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myDoughnut = new Chart(ctx, config);
+
+			var ctx2 = document.getElementById('canvastwo').getContext('2d');
+			window.myLine = new Chart(ctx2, config2);
+		};
+		
+	</script>
 <script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
-
-<script type="text/javascript" language="javascript1.2">
-$(document).ready( function(){
-	$('#list_dept').dataTable({	
-		"sPaginationType":"full_numbers",
-		"oLanguage":{
-			"sLengthMenu":"Afficher _MENU_ informations par page",
-			"sZeroRecords":"Aucun resultat",
-			"sInfo":"Liste de _START_ à _END_ sur _TOTAL_ ",
-			"sInfoEmpty":"Liste de 0 à 0 sur 0",
-			"sInfoFiltered":"(filtré à partir de _MAX_ enregistrements)"	
-		}
-	});	
-});
-</script>
-<style type="text/css" title="styledatatable">
-	@import "../css/demo_table.css";
-	div.dataTables_filter{
-	}
-	div.dataTables_lenght{
-	}
-	div.dataTables_info{
-	}
-	div.dataTables_paginate{
-	}
-</style>
-<div id="haut" style="height:75px"><center>GESTION DES ZONES</center></div>
-<p>PAGE DES STATISTIQUES</p><br/>
-<hr/>
-<div> <a href="accueil.php?par_etab_par_annee"><img src="../img/stat.png" width="48" height="48" align="absmiddle" />Statistique par établissement et par année </a></div><hr />
-<div></div><hr />
-
+<table width="95%">
+<tr><td>
+	<div class="card border-primary">
+					<div class="card-header">UFR</div>
+					<div class="card-body">
+						<h2 class="card-title">10</h2>
+					</div>
+				</div>
+				<div class="card border-primary">
+			<div class="card-header">Etudiants depuis la creation</div>
+			<div class="card-body">
+				<h2 class="card-title">3035</h2>
+			</div>
+		</div>
+	</td>
+	<td>
+			<div id="canvas-holder" style="width:40%">
+					<canvas id="chart-area"></canvas>
+				</div>
+	</td>
+</tr>
+<tr>	
+	<td colspan='2'><hr/>
+	</td>
+	</tr>
+	<tr>	
+	<td colspan='2'>
+				<canvas id="canvastwo"></canvas>
+			</td></tr>
+<table>

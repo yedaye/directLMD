@@ -19,7 +19,7 @@ if(isset($_POST['code_ecole'])){
 	if($controle==0){
 		$champ=array('code_ecole','code_ufr','lib_ecole','detail_ecole','actif');
 		$valeur=array($_POST['code_ecole'],$_POST['code_ufr'],addslashes($_POST['libelle']),addslashes($_POST['details']),$_POST['actif']);
-		insTable("ecole_ufr",$champ,$valeur);
+		insTable("ecole_ufr",$champ,$valeur,$pdo);
 		echo "<script language='Javascript'>
 		<!--
 		document.location.replace('?ecole&ajoutOK');
@@ -38,7 +38,7 @@ if(isset($_POST['code_ecole'])){
 if(isset($_POST['modif'])){
 	$champ=array('code_ecole','code_ufr','lib_ecole','detail_ecole','actif');
 	$valeur=array($_POST['code_ecole2'],$_POST['code_ufr2'],addslashes($_POST['libelle2']),addslashes($_POST['details2']),$_POST['actif2']);
-	updTable("ecole_ufr",$champ,$valeur,"code_ecole",$_POST['modif']);
+	updTable("ecole_ufr",$champ,$valeur,"code_ecole",$_POST['modif'],$pdo);
 	echo "<script language='Javascript'>
 	<!--
 	document.location.replace('?ecole&modifOK');
@@ -154,7 +154,7 @@ if(isset($_GET['supOK'])){
 </thead>
 <tbody>
 <?php
-$liste=selTableData("ecole_ufr","code_ecole");
+$liste=selTableData("ecole_ufr","code_ecole",$pdo);
 for($i=0; $i<count($liste);$i++){
 ?>
   <tr valign="top">
@@ -188,7 +188,7 @@ for($i=0; $i<count($liste);$i++){
             <td>
             <select required="true" name="code_ufr" id="code_ufr">
             <?php
-			$ufr=selTableData("ufr","code_ufr");
+			$ufr=selTableData("ufr","code_ufr",$pdo);
 			for($i=0;$i<count($ufr);$i++){
 				echo "<option value='".$ufr[$i]['code_ufr']."'>".strtolower($ufr[$i]['lib_ufr'])." (".$ufr[$i]['code_ufr'].")</option>";
 			}
@@ -226,7 +226,7 @@ for($i=0; $i<count($liste);$i++){
 ?>
 <!-- formulaire de modification -->
 <?php if(isset($_GET['modif']) && $_GET['modif']!="" && !isset($_GET['ajout'])){ 
-$modification=selTableDataWhere("ecole_ufr","code_ecole",$_GET['modif']);
+$modification=selTableDataWhere("ecole_ufr","code_ecole",$_GET['modif'],$pdo);
 ?>
 <div align="center" id='retour' style="display:none"> <a href="ecole_ufr.php" class="easyui-linkbutton">RETOUR</a></div>
 <div id="p" class="easyui-panel" title="Ajout d'une nouvelle école" style="width:700px;height:400px;padding:10px;"
@@ -238,7 +238,7 @@ $modification=selTableDataWhere("ecole_ufr","code_ecole",$_GET['modif']);
             <td>
             <select required="true" name="code_ufr2" id="code_ufr2">
             <?php
-			$ufr=selTableData("ufr","code_ufr");
+			$ufr=selTableData("ufr","code_ufr",$pdo);
 			for($i=0;$i<count($ufr);$i++){
 				$selected="";
 				if($modification['code_ufr']==$ufr[$i]['code_ufr']){ $selected="selected=\"selected\""; }
